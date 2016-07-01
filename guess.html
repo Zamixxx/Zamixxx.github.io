@@ -14,7 +14,11 @@
 		do {
 		tryCount++;
 		var useranswer1 = parseInt(prompt('Первый игрок. Введите число от 1 до 100:'));
-				
+		
+		if (answer == q) {
+		alert('выход')
+		break;
+		}		
 		if ((useranswer1 >= 1) && (useranswer1 <= 100)) {
 			if (answer == useranswer1) {
 			alert('Угадали игрок один с попытки ' + tryCount)
