@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,11 +15,11 @@
 		tryCount++;
 		var useranswer1 = parseInt(prompt('Первый игрок. Введите число от 1 до 100:'));
 		
-		if (answer == q) {
+		if (useranswer1 == 101) {
 		alert('выход')
 		break;
 		}		
-		if ((useranswer1 >= 1) && (useranswer1 <= 100)) {
+		if ((useranswer1 >= 1) && (useranswer1 <= 101)) {
 			if (answer == useranswer1) {
 			alert('Угадали игрок один с попытки ' + tryCount)
 			break;
@@ -33,8 +33,12 @@
 			alert('от 1 до 100');
 			}
 		var useranswer2 = parseInt(prompt('Второй игрок. Введите число от 1 до 100:'));
-				
-		if ((useranswer2 >= 1) && (useranswer2 <= 100)) {
+
+		if (useranswer2 == 101) {
+		alert('выход')
+		break;
+		}		
+		if ((useranswer2 >= 1) && (useranswer2 <= 101)) {
 			if (answer == useranswer2) {
 			alert('Угадал игрок два с попытки ' + tryCount)
 			break;
